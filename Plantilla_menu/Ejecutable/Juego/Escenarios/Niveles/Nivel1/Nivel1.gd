@@ -15,6 +15,7 @@ func _ready():
 func _on_Timer_timeout():
 	Menu =preMenu.instance()
 	get_node("/root/Nodo_Dios").add_child(Menu)
+	get_node("/root/Nodo_Dios/Music_menu").play()
 	$".".queue_free()
 	
 	pass # Replace with function body.
