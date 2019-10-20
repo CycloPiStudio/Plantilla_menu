@@ -1,8 +1,7 @@
 extends Node2D
 
-# Declare member variables here. Examples:
-# var a = 2
-var yy
+var preMenu = load("res://Ejecutable/Menu/Menu_niveles/Escena_menu_niveles.tscn")
+var Menu
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,6 +13,8 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	yy =	get_tree().change_scene("res://Ejecutable/Menu/Menu_entrar/Menu_entrar.tscn")
+	Menu =preMenu.instance()
+	get_node("/root/Nodo_Dios").add_child(Menu)
+	$".".queue_free()
 	
 	pass # Replace with function body.
