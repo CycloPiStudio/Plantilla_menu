@@ -14,6 +14,6 @@ func _ready():
 func _on_Boton_nivel1_pressed():
 	Nivel_juegar =preNivel_juegar.instance()
 	get_node("/root/Nodo_Dios").add_child(Nivel_juegar)
+	get_node("/root/Nodo_Dios/Music_menu").stop()
 	$".".queue_free()
-	print(get_path())
 	pass # Replace with function body.
