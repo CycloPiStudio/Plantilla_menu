@@ -4,6 +4,7 @@ var Nivel_jugar
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$"Music_menu".play()
+	print(Nivel_jugar)
 
 	pass # Replace with function body.
 
