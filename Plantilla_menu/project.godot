@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Nuevo proyecto de juego"
+config/name="CycloPi_Menu_basic"
 run/main_scene="res://Ejecutable/Menu/Dios/Escena_Dios.tscn"
 config/icon="res://icon.png"
 
